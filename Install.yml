@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name: Package installation
+    apt:
+      name:
+        - htop
+      state: latest
