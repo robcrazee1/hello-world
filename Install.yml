@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  become: true
+  
   tasks:
   - name: Package installation
     apt:
