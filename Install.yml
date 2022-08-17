@@ -1,10 +1,7 @@
 ---
 - hosts: all
-  become: true
-  
   tasks:
-  - name: Package installation
+  - name: Make sure the current version of ‘htop’ is installed.
     apt:
-      name:
-        - htop
+      name: htop
       state: latest
