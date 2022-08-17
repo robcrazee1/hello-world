@@ -2,6 +2,8 @@
 - hosts: all
   tasks:
   - name: Make sure the current version of ‘htop’ is installed.
+    become: true
+    become_user: root
     apt:
       name: htop
       state: latest
